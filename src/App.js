@@ -1,25 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import data from './data/data';
+import Picker from './components/Picker';
+import TextBox from './components/TextBox';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      pangrams: null,
+      sentences: 0,
+      paragraphs: 0
+    }
+    this.handleSelect = this.handleSelect.bind(this)
+  }
+
+  componentDidMount() {
+    this.setState({pangrams: data})
+  }
+
+  handleSelect(e) {
+    this.setState({
+      [e.name]: e.value
+    })
+  }
+
   render() {
+    
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Picker handleSelect={this.handleSelect} name={'Sentences'} />
+        <Picker handleSelect={this.handleSelect} name={'Paragraphs'} />
+        <TextBox text={"This is a text"} />
       </div>
     );
   }
