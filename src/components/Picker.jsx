@@ -8,11 +8,13 @@ const Picker = (props) => {
   return (
     <div>
       <p>{props.name}</p> <br />
-      <input type="number" 
-             name={props.name.toLowerCase()}
-             onChange={e => handleSelection(e) } 
-             min="1" max="10"  
-      />
+      <select name={props.name.toLowerCase()} 
+        onChange={e => handleSelection(e)}
+      >
+        {[...Array(12).keys()].map( num => (
+          <option value={num+1} key={`sel${num}`}>{num + 1}</option>
+        ))}
+      </select>
     </div>
   )
 }
