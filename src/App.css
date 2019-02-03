@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+body {
+  background-color: rgba(183, 255, 227, 0.678);
+  font-family: 'Playfair Display', serif;
+}
+
+header {
+  background: #222;
+  color: #efefef;
+  padding: 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+
+}
+
 #main {
   width: 52em;
   margin: 0 auto;
+  background: #FFF;
+  height: 100vh;
+}
 
+#container {
+  padding: 2em;
 }
 
 #PickerContainer {
@@ -11,12 +32,16 @@
   justify-content: space-around;
 }
 
-.Picker {
-  text-align: center;
-}
 
 #copyBox {
-  visibility: hidden;
+  z-index: -1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.Picker {
+  text-align: center;
 }
 
 @media screen and (max-width: 32em) {

@@ -53,14 +53,17 @@ class App extends Component {
     let ipsum = this.state.ipsum ? this.state.ipsum : '';
     return (
       <div id="main">
-        <h1>Pangram Ipsum</h1>
-        <PickerContainer>
-          <Picker handleSelect={this.handleSelect} name={'Sentences'}  value={this.state.sentences} />
-          <Picker handleSelect={this.handleSelect} name={'Paragraphs'} value={this.state.paragraphs} />
-          <br />
-          <Button onClick={this.copyToClipboard} name={"Copy"}/>
-        </PickerContainer>
-        <TextBox text={ipsum} />
+        <header>
+          <h1>Pangram Ipsum</h1>
+        </header>
+        <div id="container">
+          <PickerContainer>
+            <Picker handleSelect={this.handleSelect} name={'Sentences'}  value={this.state.sentences} />
+            <Picker handleSelect={this.handleSelect} name={'Paragraphs'} value={this.state.paragraphs} />
+            <Button onClick={this.copyToClipboard} name={"Copy"}/>
+          </PickerContainer>
+          <TextBox text={ipsum} />
+        </div>
       </div>
     );
   }
