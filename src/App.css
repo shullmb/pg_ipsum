@@ -11,14 +11,17 @@ header {
   padding: 2em;
   font-size: 1.2em;
   font-weight: bold;
+}
 
+header h3 {
+  color:  rgba(255, 150, 103)
 }
 
 #main {
   width: 52em;
   margin: 0 auto;
   background: #FFF;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #container {
@@ -36,8 +39,25 @@ header {
 #copyBox {
   z-index: -1000;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: -9999px;
+}
+
+.Button {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 1em;
+  padding: .5em 2em;
+  background-color: rgba(255, 150, 103, .5);
+}
+
+.Button:hover {
+  background: linear-gradient( rgba(255, 150, 103, .2),rgba(255, 150, 103, .4)  );
+}
+
+.Button:active {
+  background-color: rgba(255, 150, 103, .7);
 }
 
 .Picker {

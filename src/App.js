@@ -55,6 +55,7 @@ class App extends Component {
       <div id="main">
         <header>
           <h1>Pangram Ipsum</h1>
+          <h3>Have a pick: twenty-six letters — no forcing a jumbled quiz!</h3>
         </header>
         <div id="container">
           <PickerContainer>
