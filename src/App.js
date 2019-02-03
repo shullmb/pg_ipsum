@@ -19,6 +19,7 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({pangrams: data}, this.generateIpsum)
+    document.title = "mbshull.com | Pangram Ipsum"
   }
 
   handleSelect(e) {
