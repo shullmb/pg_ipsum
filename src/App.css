@@ -3,3 +3,30 @@
   margin: 0 auto;
 
 }
+
+#PickerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Picker {
+  text-align: center;
+}
+
+#copyBox {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 32em) {
+  #main {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #PickerContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

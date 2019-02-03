@@ -6,8 +6,8 @@ const Picker = (props) => {
   }
 
   return (
-    <div>
-      <p>{props.name}</p> <br />
+    <div className="Picker">
+      <h3>{props.name}</h3>
       <select name={props.name.toLowerCase()} 
         onChange={e => handleSelection(e)}
       >
