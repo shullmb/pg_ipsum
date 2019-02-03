@@ -65,6 +65,9 @@ class App extends Component {
           </PickerContainer>
           <TextBox text={ipsum} />
         </div>
+        <footer>
+          <p>built with love and React | i'm a developer not a designer | &copy; 2018 mbshull </p>
+        </footer>
       </div>
     );
   }

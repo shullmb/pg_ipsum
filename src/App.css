@@ -17,11 +17,21 @@ header h3 {
   color:  rgba(255, 150, 103)
 }
 
+footer {
+  background-color: #222;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #main {
   width: 52em;
   margin: 0 auto;
   background: #FFF;
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: 15em 1fr 40px;
 }
 
 #container {
@@ -65,8 +75,22 @@ header h3 {
 }
 
 @media screen and (max-width: 32em) {
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  header h3 {
+    display: none;
+  }
+
+  footer p {
+    font-size: .5em;
+  }
+
   #main {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
   }
 
