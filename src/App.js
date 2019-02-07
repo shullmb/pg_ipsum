@@ -66,7 +66,7 @@ class App extends Component {
           <TextBox text={ipsum} />
         </div>
         <footer>
-          <p>built with love and React | i'm a developer not a designer | &copy; 2018 mbshull </p>
+          <p>built with love and React | i'm a developer not a designer | &copy; 2019 <a href="http://www.mbshull.com" target="_blank">mbshull</a> </p>
         </footer>
       </div>
     );

@@ -25,6 +25,11 @@ footer {
   justify-content: center;
 }
 
+footer p a {
+  color: #444444;
+  text-decoration: none;
+}
+
 #main {
   width: 52em;
   margin: 0 auto;
