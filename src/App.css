@@ -45,6 +45,7 @@ footer p a {
 
 #PickerContainer {
   display: flex;
+  flex: 1;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
